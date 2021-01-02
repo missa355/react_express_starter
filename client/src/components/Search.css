@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+input{
+    border: 2px solid black;
+    border-radius: 10px;
+    float: left;
+    margin-left: 44%;
+}
+.btn{
+    float: left;
+}
