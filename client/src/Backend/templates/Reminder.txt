@@ -1,0 +1,7 @@
+Hello ${PERSON_NAME}, 
+
+This is a reminder that you have not sent the daily screening. 
+
+Thank you, 
+
+Wiibot

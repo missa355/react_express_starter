@@ -13,14 +13,9 @@ app.get('/api/customers', (req, res) => {
 });
 
 app.post('/api/SendEmail', (req, res) => {
-  const customers = [
-    {id: 1, firstName: 'John', lastName: 'Doe'},
-    {id: 2, firstName: 'Kerrick', lastName: 'Traversy'},
-    {id: 3, firstName: 'Mohamed', lastName: 'Issa'},
-  ];
-  console.log(req.body)
+  console.log("Trst")
   const spawn = require("child_process").spawn;
-  const pythonprocess = spawn("python3", [])
+  const pythonprocess = spawn('python3',["./scripts/SendEmail.py", "./data/contacts.txt", "./templates/Reminder.txt"])
 
   res.json({data:"Hey"});
 });
